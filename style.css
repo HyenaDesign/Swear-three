@@ -1,0 +1,77 @@
+
+body {
+  margin: 0;
+  overflow-y: scroll; 
+  scroll-snap-type: y mandatory; 
+  height: 100vh; 
+}
+
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9900;
+}
+
+
+main {
+  position: relative;
+  z-index: 9999;
+  height: 100vh; 
+}
+
+
+section {
+  height: 160vh;
+  width: 100vw; 
+  scroll-snap-align: center; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  box-sizing: border-box; 
+  scroll-snap-stop: always; 
+}
+
+#end {
+  height: 120vh;
+  width: 100vw;
+  scroll-snap-align: center;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  box-sizing: border-box;
+  scroll-snap-stop: always;
+}
+
+
+h1, h2 {
+  user-select: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin-bottom: 2px;
+  text-align: left; 
+}
+
+h1 {
+  font-size: 8em;
+}
+
+h2 {
+  margin-top: 800px;
+  font-size: 8em;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 1.5em;
+  text-align: center; 
+}
+
+.dg.ac {
+  position: fixed !important;
+  z-index: 10000 !important; 
+}
+
+
